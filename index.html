@@ -1,16 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f6f7f2" />
-    <meta name="description" content="The open-source work of Bahdah Shin. Explore apps, experiments, tools, and a separate collection of GitHub forks." />
-    <title>Bahdah Shin — Projects & experiments</title>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' rx='22' fill='%23283e32'/%3E%3Ctext x='15' y='57' font-size='46' font-family='monospace' fill='%23d6ef93'%3Eb.%3C/text%3E%3C/svg%3E" />
-  </head>
-  <body>
-    <a class="skip-link" href="#projects">Skip to projects</a>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <meta name="description" content="Bahdah Shin’s portfolio. Explore Number of Days, a small, persistent automation built with GitHub Actions.">
+  <title>Bahdah Shin — Portfolio</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f5ef;--ink:#182b2b;--muted:#64716a;--line:#d8ded3;--lime:#d6ed85}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}a:focus-visible{outline:3px solid #739a30;outline-offset:6px}.wrap{max-width:1120px;margin:auto;padding:0 48px}header{padding:32px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:19px;font-weight:700;letter-spacing:-.6px}.label{font:11px Consolas,monospace;text-transform:uppercase;letter-spacing:2px;color:var(--muted)}main{padding:84px 0 88px}.eyebrow{color:#477147}h1{font-size:clamp(48px,7vw,80px);font-weight:500;letter-spacing:-4px;line-height:1.06;margin:24px 0 48px;max-width:700px}.project{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden}.art{background:#173b32;color:var(--lime);padding:48px;display:flex;flex-direction:column;justify-content:space-between;min-height:360px}.art .label{color:#b4c8b8}.days{font-size:clamp(70px,9vw,112px);letter-spacing:-6px;line-height:1;margin:36px 0}.marks{display:flex;gap:6px}.marks span{height:10px;flex:1;background:var(--lime);border-radius:2px}.marks span:nth-child(3n){opacity:.35}.marks span:nth-child(4n){opacity:.65}.content{padding:48px;display:flex;flex-direction:column;justify-content:center}h2{font-size:36px;letter-spacing:-1.5px;font-weight:500;margin:18px 0}.description{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 30px}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;align-self:flex-start;background:var(--ink);color:white;padding:16px 22px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600}.button:hover{background:#2e5145}footer{border-top:1px solid var(--line);padding:26px 0 32px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px}
+    @media(max-width:700px){.wrap{padding:0 24px}header{padding:25px 0}main{padding:52px 0}h1{letter-spacing:-2.5px;margin-bottom:32px}.project{grid-template-columns:1fr}.art{min-height:260px;padding:32px}.days{font-size:90px}.content{padding:32px}h2{font-size:32px}footer{flex-wrap:wrap}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><span class="brand">Bahdah Shin</span><span class="label">Portfolio</span></header>
+    <main>
+      <p class="label eyebrow">Selected work / 01</p>
+      <h1>Small project.<br>One day at a time.</h1>
+      <article class="project" aria-labelledby="project-title">
+        <div class="art" aria-hidden="true">
+          <span class="label">A little progress, every day</span>
+          <div class="days">+1 day</div>
+          <div class="marks"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="content">
+          <span class="label">GitHub Actions / Automation</span>
+          <h2 id="project-title">Number of Days</h2>
+          <p class="description">A small, persistent automation. Explore the daily counter, the workflow behind it, and its commit history.</p>
+          <a class="button" href="https://bahdahshin.github.io/number_of_days/#.">Explore project <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </main>
+    <footer><span>Bahdah Shin</span><span>Built with HTML. Hosted on GitHub Pages.</span></footer>
+  </div>
+</body>
 </html>
